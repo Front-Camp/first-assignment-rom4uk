@@ -12,6 +12,13 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+
+  let sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+      if (isNaN(parseInt(arr[i]))) continue;
+      sum += parseInt(arr[i]);
+    }
+    return sum
 };
 
 export default sumElements;
