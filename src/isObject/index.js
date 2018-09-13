@@ -9,6 +9,12 @@
  */
 const isObject = data => {
   /* your logic here...*/
+
+  if (Object.prototype.toString.call(data) === '[object Object]') {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 export default isObject;

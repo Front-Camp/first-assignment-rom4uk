@@ -11,6 +11,8 @@
 */
 const sum = (a, b) => {
   /* your logic here...*/
+
+  return a + b;
 };
 
 export default sum;

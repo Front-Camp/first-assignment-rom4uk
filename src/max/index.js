@@ -7,7 +7,7 @@
 * max([-1, 0]);   // 0
 */
 const max = arr => {
-  /* your logic here...*/
+  Math.max.apply(null, arr);
 };
 
 export default max;
