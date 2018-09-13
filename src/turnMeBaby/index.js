@@ -10,7 +10,11 @@
 const turnMeBaby = str => {
   /* your logic here...*/
 
-  return str.split("").reverse().join("");
+  if (typeof str !== 'string') {
+    return false
+  } esle {
+    return str.split("").reverse().join("");
+  }
 };
 
 export default turnMeBaby;
