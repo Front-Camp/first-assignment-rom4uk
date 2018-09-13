@@ -7,6 +7,12 @@
  */
 const getFlags = arr => {
   /* your logic here...*/
+
+  let newArr = [];
+  for (let elem of arr) {
+    newArr = newArr.concat(elem.flags);
+  }
+  return newArr;
 };
 
 export default getFlags;
